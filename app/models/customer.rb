@@ -18,7 +18,8 @@ class Customer
   end
 # need to check the rubydoc for find method, the code seems not DRY enough
   def self.find_by_name(full_name)
-    self.all.find? do |first_name,last_name|
+    name_array = full_name.split(" ")
+    self.all.find do |first_name,last_name|
       customer.first_name == self.first_name && customer.last_name == self.last_name
     end
   end
@@ -30,14 +31,27 @@ class Customer
   end
 
   def self.all_names
-    self.all.map do |full_name|
-      customer.full_name == self.full_name
+    self.all.map do |customer|
+      customer.full_name
     end
   end
 
   def add_review (restaurant,content)
-    Review.new (self,restaurant,content)
+    Review.new(self,restaurant,content)
     # running out of time, forgot how to associate the Review and Customer and Restaurant
   end
+
+  def reviews
+    Review.all.select do |review|
+      review.customer == self
+    end
+  end
+
+  def restaurant
+    reviews.map do |review|
+      review.restaurant
+    end
+  end
+
 
 end

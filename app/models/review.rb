@@ -1,4 +1,5 @@
 class Review
+  
   attr_accessor :customer, :restaurant, :content
   @@all =[]
 
@@ -11,18 +12,6 @@ class Review
 
   def self.all
     @@all
-  end
-
-  def customer
-    review.map do|review|
-      review.customer
-    end
-  end
-
-  def restaurant
-    review.map do|review|
-      review.restaurant
-    end
   end
 
 end
