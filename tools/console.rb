@@ -4,7 +4,7 @@ def reload
   load 'config/environment.rb'
 end
 
-# NOTE: All the restaurants here are great Hummus joints in Jerusalem, and the customers are my wife, my cousin, and my father-in-law.
+# NOTE: All the restaurants here are great Hummus joints in Jerusalem, and the customers are my wife, my cousin, my father-in-law, and myself.
 
 daniel = Customer.new("Daniel", "Rein")
 jen = Customer.new("Jennifer","Foss_feig")
