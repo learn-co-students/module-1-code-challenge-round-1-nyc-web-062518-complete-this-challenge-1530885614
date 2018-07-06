@@ -23,14 +23,6 @@ sean_apple_bees_review = Review.new(apple_bees, sean, "blaa")
 sean_cheesecake_factory_review = Review.new(cheesecake_factory, sean, "good food")
 sean_chipotle_review = Review.new(chipotle, sean, "stuff")
 
-# jon_apple_bees_review = Review.new(apple_bees, jon)
-# jon_cheesecake_factory_review = Review.new(cheesecake_factory, jon)
-# jon_chipotle_review = Review.new(chipotle, jon)
-
-# spiderman_apple_bees_review = Review.new(apple_bees, spiderman)
-# spiderman_cheesecake_factory_review = Review.new(cheesecake_factory, spiderman)
-# spiderman_chipotle_review = Review.new(chipotle, spiderman)
-
 
 # Insert code here to run before hitting the binding.pry
 # This is a convenient place to define variables and/or set up new object instances,
