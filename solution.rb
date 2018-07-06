@@ -19,6 +19,8 @@ class Customer
     #
     # this could be an alternative way of writing this code, making reviews the strict single source of truth. However, this code only works if the assumption is that every customer immediately writes a review upon visiting a restaurant, and that there can be no customers who haven't written reviews. Instead, I decided that the customer class should know about its own instances. If a customer doesn't write a review, they are still a customer.
     #
+    #
+    # The problem with this method though, is that if I delete a customer with a .pop method, the review attached to that customer still reamins. Likewise with restaurants. However, in the real world, even in the event that a customer has passed away, their review will likely still remain. These were the two trade-offs I weighed when deciding which way to find all my customers/restaurants. Ultimately, I decided upon this way.
     @@all
   end
 
