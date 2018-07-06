@@ -19,10 +19,10 @@ review1 = Review.new(daniel, pinati)
 review2 = Review.new(jen, pinati)
 review3 = Review.new(daniel2, pinati)
 review4 = Review.new(yosi, pinati)
-review5 = Review.new(jen, taami)
-review6 = Review.new(daniel, taami)
+review5 = Review.new(jen, taami, "It was great!")
+review6 = Review.new(daniel, taami, "It was swell!")
 review7 = Review.new(daniel2, taami)
-review8 = Review.new(yosi, rachmo)
+review8 = Review.new(yosi, rachmo, "I really like this place. Service is incomparable. Food okay too.")
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
