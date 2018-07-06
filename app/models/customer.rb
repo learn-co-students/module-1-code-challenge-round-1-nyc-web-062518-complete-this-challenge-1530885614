@@ -16,7 +16,7 @@ class Customer
   def self.all
     @@all
   end
-# need to check the rubydoc for find method, the code seems not DRY enough
+
   def self.find_by_name(full_name)
     name_array = full_name.split(" ")
     self.all.find do |first_name,last_name|
@@ -38,7 +38,6 @@ class Customer
 
   def add_review (restaurant,content)
     Review.new(self,restaurant,content)
-    # running out of time, forgot how to associate the Review and Customer and Restaurant
   end
 
   def reviews
