@@ -1,4 +1,12 @@
+require 'pry'
 class Review
-  
-end
 
+  @@all = []
+
+  attr_accessor :customer, :restaurant
+
+  def self.all
+    @@all
+  end
+
+end
