@@ -30,7 +30,7 @@ class Restaurant
 
 #returns an array of customers who left reviews for this instance of restaurant
   def customers
-    self.reviews.map do |review|
+    reviews.select do |review|
       review.customer
     end
   end
